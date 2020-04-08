@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <style>
+    .shake{
+      animation: shake 0.2s ease-in-out 0s 2;
+      box-shadow: 0 0 0.5em red;
+    }
+    @keyframes shake {
+      0% { margin-left: 0rem; }
+      25% { margin-left: 0.5rem; }
+      75% { margin-left: -0.5rem; }
+      100% { margin-left: 0rem; }
+    }
+  </style>
+
   <title>Document</title>
 </head>
 <body>
@@ -18,10 +31,10 @@
       </p>
       <input type="number" id="guess-input" placeholder="Enter your guess">
       
-      <input type="submit" value="submit" id="guess-btn">
+      <input type="submit" value="Guess" id="guess-btn">
       <p class="message"></p>
     </div>
   </div>
-  <script src="app.js"></script>
+  <script src="alternative-path.js"></script>
 </body>
 </html>
